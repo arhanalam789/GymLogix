@@ -9,7 +9,6 @@ export default function WorkoutCategories() {
   const [exercises, setExercises] = useState([]);
   const [loading, setLoading] = useState(false);
 
- 
   useEffect(() => {
     const fetchBodyParts = async () => {
       setLoading(true);
@@ -34,7 +33,6 @@ export default function WorkoutCategories() {
     fetchBodyParts();
   }, []);
 
- 
   useEffect(() => {
     if (!selectedBodyPart) return;
 
@@ -50,7 +48,7 @@ export default function WorkoutCategories() {
             },
           }
         );
-        setExercises(res.data.slice(0, 10)); // first 10 for demo
+        setExercises(res.data.slice(0, 10)); 
       } catch (err) {
         console.error('Error fetching exercises:', err);
       } finally {
@@ -65,7 +63,7 @@ export default function WorkoutCategories() {
     <section className="bg-[#0f0f0f] text-white p-6 rounded-xl shadow-md max-w-7xl mx-auto">
       <h2 className="text-3xl font-bold mb-6">Workout Categories</h2>
 
-   
+     
       <div className="flex flex-wrap gap-3 mb-6">
         {bodyParts.map((part, idx) => (
           <button
@@ -82,16 +80,17 @@ export default function WorkoutCategories() {
         ))}
       </div>
 
-     
+      
       {loading && (
         <p className="text-gray-400 text-sm italic">Loading exercises...</p>
       )}
 
-   
+
       {!loading && selectedBodyPart && (
         <>
           <h3 className="text-xl font-semibold mb-4 capitalize">
-            Exercises for <span className="text-yellow-400">{selectedBodyPart}</span>
+            Exercises for{' '}
+            <span className="text-yellow-400">{selectedBodyPart}</span>
           </h3>
 
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -103,16 +102,31 @@ export default function WorkoutCategories() {
                 <p className="text-lg font-semibold mb-1 capitalize">
                   {ex.name}
                 </p>
-                <p className="text-sm text-gray-400">🎯 Target: {ex.target}</p>
-                <p className="text-sm text-gray-400">🛠 Equipment: {ex.equipment}</p>
+                <p className="text-sm text-gray-400">
+                  🎯 Target: {ex.target}
+                </p>
+                <p className="text-sm text-gray-400">
+                  🛠 Equipment: {ex.equipment}
+                </p>
                 <p>Sets: 3</p>
                 <p>Reps: 10–12</p>
               </li>
             ))}
           </ul>
+
           <p className="mt-6 text-sm text-gray-400">
-  If you're an <span className="text-white font-semibold">advanced athlete</span>, choose any <span className="text-white font-semibold">3 exercises</span>. If you're a <span className="text-white font-semibold">beginner</span>, go for <span className="text-white font-semibold">5 exercises</span> using a weight that brings you close to <span className="text-white font-semibold">failure in 10–12 reps</span>.
-</p>
+            {`If you're an `}
+            <span className="text-white font-semibold">{`advanced athlete`}</span>
+            {`, choose any `}
+            <span className="text-white font-semibold">{`3 exercises`}</span>
+            {`. If you're a `}
+            <span className="text-white font-semibold">{`beginner`}</span>
+            {`, go for `}
+            <span className="text-white font-semibold">{`5 exercises`}</span>
+            {` using a weight that brings you close to `}
+            <span className="text-white font-semibold">{`failure in 10–12 reps`}</span>
+            {`.`}
+          </p>
         </>
       )}
     </section>
