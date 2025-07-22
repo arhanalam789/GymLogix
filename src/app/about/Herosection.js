@@ -5,7 +5,7 @@ export default function AboutPage() {
   return (
     <section
       className="relative bg-cover bg-center min-h-screen flex items-center justify-center text-white"
-      style={{ backgroundImage: "url('/hs_about.jpg')" }}
+      style={{ backgroundImage: "url('/hs_about.jpeg')" }}
     >
       
       <div className="absolute inset-0 bg-black/70 z-0"></div>

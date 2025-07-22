@@ -22,7 +22,7 @@ const router = useRouter();
   };
 
   return (
-    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/gym-bg.jpg')" }}>
+    <div className="relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{ backgroundImage: "url('/lg.jpeg')" }}>
       <div className="absolute inset-0 bg-black opacity-70 z-0"></div>
       <div className="relative z-10 bg-white/10 dark:bg-gray-900/10 p-8 rounded-2xl shadow-2xl w-full max-w-md backdrop-blur-md">
         <h2 className="text-4xl font-extrabold text-center text-gray-800 dark:text-white mb-8 tracking-wide">

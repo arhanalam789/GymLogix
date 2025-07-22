@@ -4,7 +4,7 @@ export default function BlogHero() {
   return (
     <section
       className="relative bg-cover bg-center min-h-[60vh] flex items-center justify-center text-white"
-      style={{ backgroundImage: "url('/bloghero.jpg')" }}
+      style={{ backgroundImage: "url('/bloghero.jpeg')" }}
     >
      
       <div className="absolute inset-0 bg-black/70 z-0"></div>

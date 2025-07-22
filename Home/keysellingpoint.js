@@ -6,22 +6,22 @@ export default function KeySellingPoints() {
     {
       title: "Your Entire Workout History — Organized",
       desc: "Easily log your workouts by category like chest, legs, cardio, etc. Track sets, reps, duration, and notes — all in one place.",
-      image: "/11.jpg", 
+      image: "/11.jpeg", 
     },
     {
       title: "Set Goals That Actually Stick",
       desc: "Whether it's gaining muscle or burning fat, GymLogix lets you set fitness goals and tracks your progress step-by-step.",
-      image: "/22.jpg",     
+      image: "/22.jpeg",     
     },
     {
       title: "See Your Growth, Stay Motivated",
       desc: "Visualize progress with clean graphs that show improvements in strength, workout consistency, and goal completion.",
-      image: "/33.jpg", 
+      image: "/33.jpeg", 
     },
     {
       title: "Never Miss a Workout Again",
       desc: "Set daily or weekly reminders to keep you consistent. GymLogix keeps you on track with smart alerts and routine prompts.",
-      image: "/44.jpg", 
+      image: "/44.jpeg", 
     }
   ];
 

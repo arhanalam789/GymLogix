@@ -7,27 +7,27 @@ export default function FeatureCarousel() {
     {
       title: "Workout Categories",
       desc: "Organize your workouts by body part, equipment, or type for faster logging and smarter training.",
-      image: "/img1.png",
+      image: "/img1.jpeg",
     },
     {
       title: "Set Fitness Goals",
       desc: "Track your progress toward muscle gain, weight loss, or endurance with measurable targets.",
-      image: "/img2.jpg",
+      image: "/img2.jpeg",
     },
     {
       title: "Know Your Workout Split",
       desc: "Select from Push/Pull/Legs, Bro Split, or Upper/Lower Body — and follow a structured weekly plan.",
-      image: "/s1.jpg", 
+      image: "/s1.jpeg", 
     },
     {
       title: "Workout Reminders",
       desc: "Set daily or weekly reminders to help you build consistent workout habits.",
-      image: "/img4.jpg",
+      image: "/img4.jpeg",
     },
     {
         title: "Know Your Protein Intake",
         desc: "Estimate your daily protein needs based on your body weight, height, and fitness goals — perfect for muscle growth and recovery.",
-        image: "/img5.jpg", 
+        image: "/img5.jpeg", 
       }
       ,
   ];

@@ -6,42 +6,42 @@ const testimonials = [
   {
     name: 'Gus Fring',
     review: 'The app helped me track my workouts consistently. Love the goal feature!',
-    image: '/gus.jpg'
+    image: '/gus.jpeg'
   },
   {
     name: 'Walter White',
     review: 'I started using GymLogix last month. The reminders are super helpful!',
-    image: '/ww.jpg'
+    image: '/ww.jpeg'
   },
   {
     name: 'Vikram Joshi',
     review: 'Amazing app for gym enthusiasts. The exercise database is so vast!',
-    image: '/jp.jpg'
+    image: '/jp.jpeg'
   },
   {
     name: 'Pooja Nair',
     review: 'The graphs helped me see my progress visually. Highly motivating!',
-    image: '/users/user4.jpg'
+    image: '/users/user4.jpeg'
   },
   {
     name: 'Siddharth Rao',
     review: 'The app design is simple and intuitive. I use it daily!',
-    image: '/users/user5.jpg'
+    image: '/users/user5.jpeg'
   },
   {
     name: 'Kavita Patel',
     review: 'Setting fitness goals has never been this easy. Great app!',
-    image: '/users/user6.jpg'
+    image: '/users/user6.jpeg'
   },
   {
     name: 'Rohit Verma',
     review: 'I’m eating better and lifting smarter thanks to the Nutritionix API integration.',
-    image: '/users/user7.jpg'
+    image: '/users/user7.jpeg'
   },
   {
     name: 'Neha Deshmukh',
     review: 'Tracking progress with charts keeps me accountable. Love it!',
-    image: '/users/user8.jpg'
+    image: '/users/user8.jpeg'
   }
 ];
 
