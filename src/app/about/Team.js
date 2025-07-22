@@ -11,19 +11,19 @@ export default function TeamSection() {
     {
       name: 'Sneha Verma',
       role: 'CTO',
-      image: '/cto.jpg',
+      image: '/cto.jpeg',
       desc: 'Sneha leads our tech team with expertise in AI integrations and scalable apps.',
     },
     {
       name: 'Rohan Kapoor',
       role: 'Head of Marketing',
-      image: '/mh.png',
+      image: '/mh.jpeg',
       desc: 'Rohan drives campaigns that connect users with innovative wellness solutions.',
     },
     {
       name: 'Ananya Rao',
       role: 'Lead Developer',
-      image: '/ld.jpg',
+      image: '/ld.jpeg',
       desc: 'Ananya specializes in React and backend services powering GymLogix.',
     },
   ];
