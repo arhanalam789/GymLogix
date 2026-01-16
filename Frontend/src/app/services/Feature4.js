@@ -191,7 +191,7 @@ export default function KnowYourProtein() {
             </svg>
           </div>
           <p className="text-neutral-400 text-sm leading-relaxed">
-            <span className="text-white font-bold block mb-1">Coach's Advice:</span>
+            <span className="text-white font-bold block mb-1">Coach&apos;s Advice:</span>
             Consistent protein intake is the foundation of muscle repair. Aim for 4-5 protein-rich meals spread throughout the day for optimal absorption and satiety.
           </p>
         </div>

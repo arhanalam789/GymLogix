@@ -182,7 +182,7 @@ const HeroSection = () => {
                   exit={{ opacity: 0 }}
                   className="p-4 bg-green-500/10 border border-green-500/20 rounded-2xl text-green-500 text-center text-xs font-black uppercase tracking-widest"
                 >
-                  🚀 Signal Received. We'll contact you soon.
+                  🚀 Signal Received. We&apos;ll contact you soon.
                 </motion.div>
               )}
               {status === 'error' && (

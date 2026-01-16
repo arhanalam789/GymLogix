@@ -34,7 +34,7 @@ export default function AboutHero() {
             <span className="text-[#FF4F5A] drop-shadow-[0_0_15px_rgba(255,79,90,0.3)]">TRANSFORMATION</span>
           </h1>
           <p className="text-lg md:text-xl text-neutral-400 max-w-2xl font-medium leading-relaxed">
-            We aren't just an app; we're a movement. At GymLogix, we bridge the gap between
+            We aren&apos;t just an app; we&apos;re a movement. At GymLogix, we bridge the gap between
             ambition and achievement through cutting-edge technology and human-centric design.
           </p>
 

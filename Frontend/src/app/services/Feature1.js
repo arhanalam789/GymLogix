@@ -38,7 +38,7 @@ export default function WorkoutCategories() {
     };
 
     fetchBodyParts();
-  }, []);
+  }, [selectedBodyPart]);
 
   useEffect(() => {
     if (!selectedBodyPart) return;
@@ -89,8 +89,8 @@ export default function WorkoutCategories() {
               key={idx}
               onClick={() => setSelectedBodyPart(part)}
               className={`px-6 py-2 rounded-full text-sm font-bold uppercase tracking-widest transition-all duration-300 border ${selectedBodyPart === part
-                  ? 'bg-[#FF4F5A] border-[#FF4F5A] text-white shadow-lg shadow-red-900/20 active:scale-95'
-                  : 'bg-neutral-900 border-neutral-800 text-neutral-500 hover:border-neutral-700 hover:text-white'
+                ? 'bg-[#FF4F5A] border-[#FF4F5A] text-white shadow-lg shadow-red-900/20 active:scale-95'
+                : 'bg-neutral-900 border-neutral-800 text-neutral-500 hover:border-neutral-700 hover:text-white'
                 }`}
             >
               {part}
@@ -178,7 +178,7 @@ export default function WorkoutCategories() {
               </svg>
             </div>
             <p className="text-neutral-400 text-sm italic leading-relaxed">
-              If you're an <span className="text-white font-bold">advanced athlete</span>, choose any 3 exercises. If you're a <span className="text-white font-bold">beginner</span>, go for 5 exercises using a weight that brings you close to failure in 10-12 reps.
+              If you&apos;re an <span className="text-white font-bold">advanced athlete</span>, choose any 3 exercises. If you&apos;re a <span className="text-white font-bold">beginner</span>, go for 5 exercises using a weight that brings you close to failure in 10-12 reps.
             </p>
           </div>
         )}
