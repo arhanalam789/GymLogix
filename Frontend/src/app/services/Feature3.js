@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { API_URL } from '@/lib/config';
 
 export default function SetGoals() {
   const [goalText, setGoalText] = useState('');
@@ -16,7 +17,7 @@ export default function SetGoals() {
         throw new Error('Please login again to manage your goals.');
       }
       console.log('Fetching goals with token:', token);
-      const res = await fetch('http://localhost:5001/api/goals', {
+      const res = await fetch(`${API_URL}/api/goals`, {
         headers: {
           'x-auth-token': token
         }
@@ -47,7 +48,7 @@ export default function SetGoals() {
 
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch('http://localhost:5001/api/goals', {
+      const res = await fetch(`${API_URL}/api/goals`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -68,7 +69,7 @@ export default function SetGoals() {
   const toggleGoal = async (id, completed) => {
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch(`http://localhost:5001/api/goals/${id}`, {
+      const res = await fetch(`${API_URL}/api/goals/${id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -90,7 +91,7 @@ export default function SetGoals() {
   const deleteGoal = async (id) => {
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch(`http://localhost:5001/api/goals/${id}`, {
+      const res = await fetch(`${API_URL}/api/goals/${id}`, {
         method: 'DELETE',
         headers: {
           'x-auth-token': token
