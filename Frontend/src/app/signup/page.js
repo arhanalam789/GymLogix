@@ -36,7 +36,7 @@ export default function Signup() {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black z-10" />
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
-          style={{ backgroundImage: "url('/signup_bg.jpg')" }}
+          style={{ backgroundImage: "url('/dream_back.jpeg')" }}
         />
         <div className="absolute bottom-10 left-10 z-20 max-w-md">
           <motion.div
