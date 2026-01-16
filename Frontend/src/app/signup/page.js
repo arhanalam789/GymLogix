@@ -34,11 +34,9 @@ export default function Signup() {
       <div className="hidden lg:flex w-1/2 relative items-center justify-center overflow-hidden border-r border-white/5">
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10 opacity-80" />
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black z-10" />
-        <Image
-          src="/signup_bg.jpg"
-          alt="Signup Background"
-          fill
-          className="object-cover opacity-60"
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+          style={{ backgroundImage: "url('/signup_bg.jpg')" }}
         />
         <div className="absolute bottom-10 left-10 z-20 max-w-md">
           <motion.div
