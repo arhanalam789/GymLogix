@@ -10,10 +10,38 @@ const app = express();
 
 
 app.use(express.json());
+
+
+const allowedOrigins = [
+    'http://localhost:3000',
+    'http://localhost:3001',
+    'http://localhost:5001',
+    /\.vercel\.app$/, 
+    'https://gym-logix.vercel.app',
+    'https://gym-logix-three.vercel.app'
+];
+
 app.use(cors({
-    origin: '*',
+    origin: function (origin, callback) {
+        
+        if (!origin) return callback(null, true);
+
+        const isAllowed = allowedOrigins.some(allowedOrigin => {
+            if (allowedOrigin instanceof RegExp) {
+                return allowedOrigin.test(origin);
+            }
+            return allowedOrigin === origin;
+        });
+
+        if (isAllowed) {
+            callback(null, true);
+        } else {
+            callback(new Error('Not allowed by CORS'));
+        }
+    },
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeaders: ['Content-Type', 'x-auth-token']
+    allowedHeaders: ['Content-Type', 'x-auth-token'],
+    credentials: true
 }));
 
 
